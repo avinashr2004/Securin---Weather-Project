@@ -25,7 +25,7 @@ def get_historical_weather(
     # Start with a base query that is always true
     query = "SELECT * FROM weather_logs WHERE 1=1"
     
-    # Dynamically add filters based on which boxes the user filled in
+    # Dynamically add filters based on which boxes the user filled i
     if year is not None:
         query += f" AND year = {year}"
     if month is not None:
